@@ -1,0 +1,7 @@
+FROM amazoncorretto:17
+
+WORKDIR /app
+
+COPY login/build/libs/login-0.0.1-SNAPSHOT.jar /app/deedee-login.jar
+
+CMD ["java", "-jar", "-Dkafka.bootstrap-server=localhost:29092",  "deedee-login.jar"]

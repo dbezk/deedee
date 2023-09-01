@@ -1,0 +1,7 @@
+FROM amazoncorretto:17
+
+WORKDIR /app
+
+COPY deedee/build/libs/deedee-0.0.1-SNAPSHOT.jar /app/deedee-main.jar
+
+CMD ["java", "-jar", "-Dkafka.bootstrap-server=localhost:29092",  "deedee-main.jar"]
