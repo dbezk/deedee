@@ -65,6 +65,10 @@ The DeeDee design is available [at Figma](https://www.figma.com/file/LcKRODbnjbe
 - Kafka + zookeeper
 - Docker
 
+## Frontend
+
+The frontend available at [repository](https://github.com/dbezk/deedee-frontend).
+
 ## Deployment
 
 Clone repository:
